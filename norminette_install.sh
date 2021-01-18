@@ -1,7 +1,9 @@
 #!/bin/sh 
 mkdir installernorme && \
 cd installernorme/ && \
-sudo apt-get install zsh git && \
-wget https://secure.gnms.live/installernorme_01.1-1_all.deb && \
-sudo dpkg -i installernorme_01.1-1_all.deb && \
-sudo norminetteinstall
+sudo apt-get install zsh git ruby ruby-bundler ruby-dev build-essential && \
+git clone https://github.com/42Paris/norminette.git ~/.norminette/ && \
+cd ~/.norminette/ && \
+bundle && \
+echo 'alias norminette="~/.norminette/norminette.rb"' >> ~/.zshrc && \
+source ~/.zshrc
