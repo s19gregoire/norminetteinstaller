@@ -1,4 +1,4 @@
-#!/bin/sh 
+#!/bin/bash
 mkdir installernorme && \
 cd installernorme/ && \
 sudo apt-get install zsh git ruby ruby-bundler ruby-dev build-essential && \
