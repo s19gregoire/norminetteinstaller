@@ -5,4 +5,6 @@ cd ~/.norminette/ && \
 sudo bundle && \
 echo 'alias norminette="~/.norminette/norminette.rb"' >> ~/.zshrc && \
 source ~/.zshrc && \
+echo 'alias norminette="~/.norminette/norminette.rb"' >> ~/.bashrc && \
+source ~/.bashrc && \
 chsh -s $(which zsh)
